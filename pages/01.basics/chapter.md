@@ -1,11 +1,11 @@
 ---
-title: Basics
+title: Основы
 taxonomy:
     category: docs
 ---
 
-### Chapter 1
+### Глава 1
 
-# Basics
+# Основы
 
-Discover what **Grav** is all about and the core-concepts behind it.
+Что такое **Grav**, основные концепции.
