@@ -1,57 +1,57 @@
 ---
-title: Installation
+title: Установка
 taxonomy:
     category: docs
 ---
 
-Installation of Grav is a trivial process. In fact, there is no real installation.  You have **two** options for installing Grav.  The first - and simplest - way is to simply download the **zip** archive, and extract it. The other way is to clone the source project directly from **GitHub**, and then run an included script command to install needed dependencies:
+Установка Grav тривиальный процесс. В действительности, нет никакой реальной установки.  У вас есть **два** варианта установки Grav.  Первый и простейший — просто скачать **zip-архив** и распаковать его. Второй вариант — склонировать исходный проект напрямую из **GitHub**, а затем запустить скриптовую команду для установки необходимых зависимостей:
 
-## Option 1: Install from ZIP package
+## Вариант 1: Установка из ZIP-архива
 
-The easiest way to install Grav is to download the ZIP package and extract it:
+Простейший вариант установки Grav — скачать ZIP-архив и распаковать его:
 
-1. Download the latest-and-greatest **Grav Base** package from the [Downloads](http://getgrav.org/downloads)
-2. Extract the ZIP file in the [webroot](https://www.wordnik.com/words/webroot) of your web server, e.g. `~/webroot/grav`
+1. Загрузите наиболее свежий **Grav Base** пакет со страницы [Загрузки](http://getgrav.org/downloads)
+2. Распакуйте ZIP-файл в корневую директорию вашего сервера (webroot), например `~/webroot/grav`
 
->>>> If you downloaded the ZIP file and then plan to move it to your webroot, please move the **ENTIRE FOLDER** because it contains several hidden files (such as .htaccess) that will not be selected by default. The omission of these hidden files can cause problems when running Grav.
+>>>> Если вы загрузили и распаковали ZIP-файл и затем планируете переместить содержимое в webroot, то, пожалуйста, перемещайте **ЦЕЛУЮ ПАПКУ**, поскольку в ней находится несколько скрытых файлов (таких как .htaccess), которые не выбираются по умолчанию. Исключение этих скрытых файлов может вызвать проблемы в работе Grav.
 
-## Option 2: Install from GitHub
+## Вариант 2: Установка из GitHub
 
-The alternative method is to clone Grav from the GitHub repository, and then run a simple dependency installation script:
+Альтернативный метод — это клонирование Grav из GitHub репозитория и запуск простого скрипта для установки зависимостей:
 
-1. Clone the Grav repository from [GitHub](https://github.com/getgrav/grav) to a folder in the webroot of your server, e.g. `~/webroot/grav`. Launch a **terminal** or **console** and navigate to the webroot folder:
+1. Склонируйте репозиторий Grav из [GitHub](https://github.com/getgrav/grav) в корневую директорию вашего сервера, например `~/webroot/grav`. Запустите **терминал** или **консоль** и перейдите в webroot папку:
    ```
    $ cd ~/webroot
    $ git clone https://github.com/getgrav/grav.git
    ```
 
-2. Install the **plugin** and **theme dependencies** by using the [Grav CLI application](../../advanced/grav-cli) `bin/grav`:
+2. Установите зависимости **плагинов** и **тем оформления** с помощью [Grav CLI приложения](../../advanced/grav-cli) `bin/grav`:
    ```
    $ cd ~/webroot/grav
    $ bin/grav install
    ```
 
-   This will automatically **clone** the required dependencies from GitHub directly into this Grav installation.
+   Это автоматически **склонирует** все необходимые зависимости напрямую из GitHub в текущую Grav установку.
 
-## Webserver
+## Веб-сервер
 
 #### Apache/IIS/Nginx
 
-Using Grav with a web server such as Apache, IIS, or Nginx is as simple as extracting Grav into a folder under the [webroot](https://www.wordnik.com/words/webroot). All it requires to function is PHP 5.4 or higher, so you should make sure that your server instance meets that requirement. More information about Grav requirements can be found in the [requirements](../requirements) chapter of this guide.
+Использование Grav с веб-серверами, такими как Apache, IIS, или Nginx также просто как распаковка Grav в корневую директорию сервера. Все что требуется — это функции PHP 5.4 или выше, так что вы должны убедиться, что ваш экземпляр сервера удовлетворяет этому требованию. Больше информации о требованиях Grav можно найти в разделе [требования](../requirements) этого руководства.
 
-If your web root is, for example, `~/public_html` then you could extract it into this folder and reach it via `http://localhost`.  If you extracted it into `~/public_html/grav` you would reach it via `http://localhost/grav`.
+Если ваш webroot, например, `~/public_html`, то вы можете распаковать архив в эту папку и обратиться к сайту по адресу `http://localhost`.  При распаковке в `~/public_html/grav` вы можете открыть сайт по адресу `http://localhost/grav`.
 
-##### PHP's built-in Web Server
+##### Встроенный веб-сервер PHP
 
->>>> Using the built-in PHP web server is **intended for quick testing only!**.  Also due to lack of routing functionality with the built-in web server, many Grav plugins will **simply not work**.  This includes **Admin**, **SimpleSearch**, **TaxonomyList**, **Feed**, and many others. So please use a proper web server!
+>>>> Использование встроенного PHP веб-сервера **предназначено только для быстрого тестирования!**.  Также из-за отсутствия функциональных возможностей встроенного веб-сервера множество Grav плагинов **просто не работают**.  Это плагины **Admin**, **SimpleSearch**, **TaxonomyList**, **Feed** и многие другие. Поэтому, пожалуйста, используйте настоящий веб-сервер!
 
-Grav is incredibly easy to set up and get running. You can do this without even installing or configuring a web server!  Be sure you have at least PHP version 5.4 by going to the terminal and typing:
+Grav невероятно просто настроить и запустить. Вы можете сделать это даже без необходимости установки и настройки веб-сервера!  Убедитесь, что у вас есть по крайней мере PHP версии 5.4, перейдите в терминал и наберите:
 
 ```bash
 $ php -v
 ```
 
-This should report the version and build information.  For example:
+Это должно сообщить информацию о версии и сборке.  Например:
 
 ```bash
 PHP 5.4.24 (cli) (built: Jan 19 2014 21:32:15)
@@ -60,54 +60,54 @@ Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
 ```
 
 
-To try Grav, simply navigate to the folder where you extracted your **Grav Base** package file in your terminal and type:
+Чтобы попробовать Grav, просто перейдите в терминале в папку где вы распаковали ваш **базовый пакет Grav** и введите:
 
 ```bash
 $ php -S localhost:8000
 ```
 
-This runs the built-in PHP web server.  Then, point your browser to `http://localhost:8000` and you should see your Grav site.
+Это запустит встроенный PHP веб-сервер.  Затем передите в браузере по ссылке `http://localhost:8000` и вы должны увидеть ваш Grav сайт.
 
-## Successful Installation
+## Успешная установка
 
-The first time it loads, Grav pre-compiles some files. If you now refresh your browser, you will get a faster, cached version.
+Во время первой загрузки Grav предварительно компилирует некоторые файлы. Далее, если вы обновите страницу браузера, то вы получите более быструю, кэшированную версию.
 
-![Grav Installed](install.png?cropResize=600,600)  {.border}
+![Grav установлен](install.png?cropResize=600,600)  {.border}
 
->>> In the previous examples, **$** represents the command prompt.  This may look different on various platforms.
+>>> В предыдущих примерах **$** представляет командную строку. Это может выглядеть по-разному на различных платформах.
 
-By default, Grav comes with some sample pages to give you something to get started with.  Your site is already fully functional and you can configure it, add content, extend it, or customize it as much as you like.
+По умолчанию, Grav поставляется с некоторыми примерами страниц, чтобы дать вам то, с чем вы могли бы начать работу. Ваш сайт уже полностью функционален и вы можете конфигурировать его, добавлять контент, расширять или кастомизировать так как вы хотите.
 
-## Installation & Setup Problems
+## Проблемы установки и настройки
 
-If any issues are discovered during the initial page load (or after a cache-flush event) you may see an error page:
+Если какие-то проблемы были обнаружены во время первоначальной загрузки страницы (или после события очистки кэша), то вы можете увидеть страницу ошибки:
 
-![Grav with Problems](problems.png?cropResize=600,600)  {.border}
+![Grav с проблемами](problems.png?cropResize=600,600)  {.border}
 
-Please consult the [Troubleshooting](../../troubleshooting) section for help regarding specific issues.
+Пожалуйста, ознакомьтесь с разделе [Решение проблем](../../troubleshooting) для помощи в отношении конкретных вопросов.
 
-## Grav Updates
+## Обновление Grav
 
-### Automatic Updates
+### Автоматическое обновление
 
-The preferred method for updating Grav (from v0.9.3 onwards) is to use the **Grav Package Manager (GPM)**. All you need to do  is to navigate to the root of your Grav site and type:
+Предпочитаемый метод обновления Grav (версии 0.9.3 и выше) — это использование **Менеджера пакетов Grav (GPM)**. Все что вам нужно — это перейти в корень вашего Grav сайта и написать:
 
 ```
 bin/gpm selfupgrade
 ```
 
-Full information can be found in the [Grav GPM Documentation](../../advanced/grav-gpm).  We also plan on having GPM integrated in our the upcoming **Admin Panel** plugin which will check, prompt, and automatically install any updates.
+Полная информация может быть найдена в разделе [Grav GPM документации](../../advanced/grav-gpm).  Мы также планируем интегрировать GPM в наш плагин **Панель администратора (Admin Panel)**, который будет проверять, запрашивать и автоматически устанавливать обновления.
 
-### Manual Updates
+### Ручное обновление
 
-The process to manually update Grav is:
+Процесс ручного обновления Grav такой:
 
-1. Backup your site using `bin/grav backup` (more information in [Grav CLI Documentation](../../advanced/grav-cli) or alternatively zipping up the whole Grav site, or specifically the `user/` folder.
+1. Сделайте бекап вашего сайта с помощью `bin/grav backup` (дополнительная информация в [Grav CLI документации](../../advanced/grav-cli) либо сделайте zip-архив целого Grav сайта или конкретно `user/` папки.
 
-2. Download the Update Package from our [Downloads section](http://getgrav.org/downloads). It is important to download the **update** package and **not the core** package.
+2. Загрузите пакет обновления с нашей [страницы Загрузки](http://getgrav.org/downloads). При этом важно скачать пакет **обновления (update)**, а **не пакет ядра (core)**.
 
-3. Extract the update package over the top of your existing Grav installation and it will copy over any updates in the `core system folder`.
+3. Распакуйте пакет обновления поверх существующей установки Grav и он сделает необходимые обновления в `системной папке ядра`.
 
-4. Clear the Grav cache with `bin/grav clear-cache` to ensure any cache or compiled files are recreated cleanly.
+4. Очистите кэш Grav с помощью команды `bin/grav clear-cache`, чтобы любой кэш или скомпилированные файлы были созданы заново.
 
->>>> It's important not to copy the **core** Grav zip file over your current site as it could overrwrite your `user/` folder and resulting in a loss of your data.
+>>>> Важно не копировать zip-файл **ядра** Grav поверх вашего текущего сайта, поскольку это может переписать вашу папку `user/`, что приведет к потере ваших данных.
