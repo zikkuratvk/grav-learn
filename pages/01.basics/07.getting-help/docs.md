@@ -1,30 +1,30 @@
 ---
-title: Getting Help
+title: Получение помощи
 taxonomy:
     category: docs
 ---
 
-Although we have done our best to document as much as possible here in the documentation, it is inevitable that there will be questions we have not answered.  We want to be accessible as possible, so we have several methods to reach the developers in order to get help directly:
+Несмотря на то, что мы сделали все возможное, чтобы эта документация была наиболее полной, неизбежно возникнут вопросы на которые мы не ответили. Мы хотим быть максимально доступными, поэтому существует несколько мест, где вы можете получить помощь непосредственно от разработчиков:
 
-## Forum
+## Форум
 
-We have a new [real-time forum solution](http://getgrav.org/forum) utilizing the **Muut** platform to provide a simple way to get your Grav questions answered quickly.
+У нас есть [real-time форум](http://getgrav.org/forum), использующий платформу **Muut**, который обеспечивает простой способ получения ответов на ваши вопросы по Grav.
 
 ## Twitter
 
-We **highly recommend** you [follow us on Twitter](https://twitter.com/getgrav) as that provides a real-time way for us to reach out to our followers and let them know about news and events related to Grav development.
+Мы **крайне рекомендуем** вам [следовать за нами на Twitter](https://twitter.com/getgrav), так как это позволяет держать связь с нашими подписчиками в реальном времени и сообщать им о новостях и событиях, связанных с разработкой Grav.
 
-## Grav Blog
+## Grav блог
 
-You can join in a discussion on any of the topics we post about on the [Grav Development Blog](http://getgrav.org/blog), via the comments.  We will post all major news and information to our blog, as well as useful posts about development in general. We also plan to share great tutorials and hints about how get the most out of Grav.
+С помощью комментариев вы можете обсудить любой материал, о котором мы пишем в нашем [блоге о разработке Grav](http://getgrav.org/blog).  Мы размещаем все основные новости и информацию в нашем блоге, а также полезные материалы о разработке в целом. Также у нас в планах размещение больших обучающих программ и советов о том как получить максимальную отдачу от Grav.
 
-## GitHub Issues
+## Баг-трекер GitHub
 
-If you find a bug, have a general question, or even if you want to contribute to the Grav project as a whole, you can use the [Grav GitHub Issues tracker](https://github.com/getgrav/grav/issues).  We are very diligent about responding to issues posted here, and it can provide a useful way to start a conversation with us.  If you have a specific issue with one of our plugins, themes, or skeletons, you can also submit an issue on that repository.
+Если вы нашли ошибку, хотите задать общий вопрос или желаете внести свой вклад в проект Grav как разработчик, то вы можете использовать [Grav GitHub баг-трекер](https://github.com/getgrav/grav/issues). Мы очень внимательно относимся к оставленным здесь замечаниям, поэтому трекер является хорошим способом начать разговор с нами. Если у вас есть проблема с одним из наших плагинов, темой оформления или скелетом сайта, вы также можете написать о ней в конкретном репозитории.
 
-## Chat on Gitter.im
+## Чат на Gitter.im
 
-You can **chat with us live** on [Gitter.im](https://gitter.im/getgrav/grav). Gitter.im is a great new chat tool that is tightly coupled with GitHub so you will need to create a free GitHub account if you don't already have one.  Once done, you can use the [https://gitter.im/getgrav/grav](https://gitter.im/getgrav/grav) URL or you can download one of their [native apps](https://gitter.im/apps).
+Вы можете **пообщаться с нами вживую** на [Gitter.im](https://gitter.im/getgrav/grav). Gitter.im — это отличный новый чат, который тесно связан с GitHub, поэтому необходимо предварительно создать бесплатную учетную запись GitHub, если у вас её еще нет.  После этого вы можете перейти по ссылке [https://gitter.im/getgrav/grav](https://gitter.im/getgrav/grav) либо можете скачать одно из их [официальных приложений](https://gitter.im/apps) для своей платформы.
 
 
 
